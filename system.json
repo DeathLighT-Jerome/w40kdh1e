@@ -1,0 +1,56 @@
+{
+    "id": "w40kdh1e",
+    "title": "W40kDH1 - First Edition System",
+    "description": "Je préfère le Dark Heresy de première version. Bienvenue.",
+    "version": "0.0.1",
+    "compatibility": {
+        "minimum": "10.303",
+        "verified": "11"
+    },
+    "url": "",
+    "manifest": "",
+    "download": "",
+    "authors": [
+        {
+            "name": "Mortdufun"
+        }
+    ],
+    "scripts": [
+        "scripts/system-script.js"
+    ],
+    "esmodules": [
+        "scripts/system-module-1.mjs"
+    ],
+    "styles": [
+        "styles/system-styles.css"
+    ],
+    "packs": [
+        {
+            "name": "acolyte",
+            "label": "Starter Acolyte",
+            "system": "w40kdh1e",
+            "path": "packs/acolyte.db",
+            "type": "Actor",
+            "private": false,
+            "flags": {}
+        },
+        {
+            "name": "monsters",
+            "label": "Monsters (SRD)",
+            "system": "w40kdh1e",
+            "path": "packs/monsters.db",
+            "type": "Actor",
+            "private": false,
+            "flags": {}
+        }
+    ],
+    "socket": true,
+    "gridDistance": 5,
+    "gridUnits": "m",
+    "primaryTokenAttribute": "attributes.hp",
+    "flags": {
+        "needsMigrationVersion": "0.0.1",
+        "compatibleMigrationVersion": "0.8",
+        "hotReload": false
+    }
+}
